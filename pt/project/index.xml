@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Ramon Gonze</title>
+    <link>https://ramongonze.github.io/pt/project/</link>
+      <atom:link href="https://ramongonze.github.io/pt/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language><lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ramongonze.github.io/media/icon_hu642a7a9d7f0a9425042fc70c7a02c56e_150229_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>https://ramongonze.github.io/pt/project/</link>
+    </image>
+    
+    <item>
+      <title>QIF Graphics</title>
+      <link>https://ramongonze.github.io/pt/project/qif-graphics/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://ramongonze.github.io/pt/project/qif-graphics/</guid>
+      <description>&lt;p&gt;Ferramenta gráfica para representar Fluxo de Informação Quantitativo (QIF) para um conjunto de três segredos. Desenvolvido em C/C++ todas as estruturas gráficas foram feitas utilizando a biblioteca &lt;a href=&#34;https://www.raylib.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;raylib&lt;/a&gt; e o &lt;a href=&#34;https://emscripten.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;emscripten&lt;/a&gt; para compilar o projeto para WebAssembly.&lt;/p&gt;
+&lt;p&gt;A ferramenta está disponível &lt;a href=&#34;https://homepages.dcc.ufmg.br/~ramon.gonze/qif-graphics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>QIF Library</title>
+      <link>https://ramongonze.github.io/pt/project/qif-library/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://ramongonze.github.io/pt/project/qif-library/</guid>
+      <description>&lt;p&gt;Biblioteca em Python para Fluxo de Informação Quantitativo (QIF). Ela modela as estruturas básicas de QIF como segredos, canais e o &lt;em&gt;framework&lt;/em&gt; &lt;em&gt;g&lt;/em&gt;-vulnerability.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
