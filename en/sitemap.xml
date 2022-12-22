@@ -84,14 +84,14 @@
       href=""
     /></url>
   <url>
-    <loc>https://ramongonze.github.io/publication-type/3/</loc><lastmod>2022-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+    <loc>https://ramongonze.github.io/publication-type/4/</loc><lastmod>2022-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="pt"
-      href="https://ramongonze.github.io/pt/publication-type/3/"
+      href="https://ramongonze.github.io/pt/publication-type/4/"
     /><xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://ramongonze.github.io/publication-type/3/"
+      href="https://ramongonze.github.io/publication-type/4/"
     /></url>
   <url>
     <loc>https://ramongonze.github.io/publication/qif-shuffle/</loc><lastmod>2022-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
@@ -162,6 +162,36 @@
       rel="alternate"
       hreflang="en"
       href=""
+    /></url>
+  <url>
+    <loc>https://ramongonze.github.io/tag/inep/</loc><lastmod>2020-07-03T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://ramongonze.github.io/pt/tag/inep/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ramongonze.github.io/tag/inep/"
+    /></url>
+  <url>
+    <loc>https://ramongonze.github.io/tag/price/</loc><lastmod>2020-07-03T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://ramongonze.github.io/pt/tag/price/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ramongonze.github.io/tag/price/"
+    /></url>
+  <url>
+    <loc>https://ramongonze.github.io/project/price/</loc><lastmod>2020-07-03T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://ramongonze.github.io/pt/project/price/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ramongonze.github.io/project/price/"
     /></url>
   <url>
     <loc>https://ramongonze.github.io/categories/</loc><changefreq>weekly</changefreq><xhtml:link

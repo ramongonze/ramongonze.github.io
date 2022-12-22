@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>price | Ramon Gonze</title>
+    <link>https://ramongonze.github.io/tag/price/</link>
+      <atom:link href="https://ramongonze.github.io/tag/price/index.xml" rel="self" type="application/rss+xml" />
+    <description>price</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 03 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ramongonze.github.io/media/icon_hu642a7a9d7f0a9425042fc70c7a02c56e_150229_512x512_fill_lanczos_center_3.png</url>
+      <title>price</title>
+      <link>https://ramongonze.github.io/tag/price/</link>
+    </image>
+    
+    <item>
+      <title>PRICE</title>
+      <link>https://ramongonze.github.io/project/price/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://ramongonze.github.io/project/price/</guid>
+      <description>&lt;p&gt;The PRICE (&lt;strong&gt;Pri&lt;/strong&gt;vacidade nos &lt;strong&gt;C&lt;/strong&gt;ensos &lt;strong&gt;E&lt;/strong&gt;ducacionais - &lt;em&gt;Privacy in the Educational Censuses&lt;/em&gt;) project is a cooperation between the Department of Computer Science of UFMG and Inep (Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira), a Brazilian public institution responsible for publishing the Brazilian educational census. The study was ordered by Inep with the goal of measuring privacy risks of publishing censuses the way the institution did until 2019 and also learning how to publish the censuses keeping citizens privacy at the same time the data still remains util for statistical research.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://download.inep.gov.br/microdados/TED_8750-UFMG.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&lt;/a&gt; you will find all the technical reports (in portuguese) produced in the project that were used as reference by Inep to change their way of publishing the Brazilian educational census.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.gov.br/inep/pt-br/assuntos/noticias/institucional/nota-de-esclarecimento-divulgacao-dos-microdados&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&lt;/a&gt; is a clarification note (in portuguese) published by Inep that justifies why they removed all the Brazilian educational censuses from their website that were published before the PRICE project. Also the note comments about the new way the institution will publish the next censuses.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
