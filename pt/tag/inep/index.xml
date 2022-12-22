@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>inep | Ramon Gonze</title>
+    <title>Inep | Ramon Gonze</title>
     <link>https://ramongonze.github.io/pt/tag/inep/</link>
       <atom:link href="https://ramongonze.github.io/pt/tag/inep/index.xml" rel="self" type="application/rss+xml" />
-    <description>inep</description>
+    <description>Inep</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language><lastBuildDate>Fri, 03 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ramongonze.github.io/media/icon_hu642a7a9d7f0a9425042fc70c7a02c56e_150229_512x512_fill_lanczos_center_3.png</url>
-      <title>inep</title>
+      <title>Inep</title>
       <link>https://ramongonze.github.io/pt/tag/inep/</link>
     </image>
     
@@ -17,9 +17,9 @@
       <link>https://ramongonze.github.io/pt/project/price/</link>
       <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
       <guid>https://ramongonze.github.io/pt/project/price/</guid>
-      <description>&lt;p&gt;O proejto PRICE (&lt;strong&gt;Pri&lt;/strong&gt;vacidade nos &lt;strong&gt;C&lt;/strong&gt;ensos &lt;strong&gt;E&lt;/strong&gt;ducacionais) é uma cooperação entre o Departamento de Ciência da Computação da UFMG e o Inep (Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira), uma instituição pública brasileira responsável por publicar o censo educacional brasileiro. O estudo foi encomendado pelo Inep com o objetivo de medir os riscos de privacidade de se publicar censos na maneira como a instituição fazia até 2019, bem como aprender a como publicar censos mantendo a privacidade dos cidadãos ao mesmo tempo em que mantém a utilidade dos dados para pesquisas estatísticas.&lt;/p&gt;
+      <description>&lt;p&gt;O projeto PRICE (&lt;strong&gt;Pri&lt;/strong&gt;vacidade nos &lt;strong&gt;C&lt;/strong&gt;ensos &lt;strong&gt;E&lt;/strong&gt;ducacionais) é uma cooperação entre o Departamento de Ciência da Computação da UFMG e o Inep (Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira), uma instituição pública brasileira responsável por publicar o censo educacional brasileiro. O estudo foi encomendado pelo Inep com o objetivo de medir os riscos de privacidade de se publicar censos na maneira como a instituição fazia até 2019, bem como aprender a como publicar censos mantendo a privacidade dos cidadãos ao mesmo tempo em que se mantém a utilidade dos dados para pesquisas estatísticas.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://download.inep.gov.br/microdados/TED_8750-UFMG.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Aqui&lt;/a&gt; você irá encontrar todos os relatórios técnicos produzidos no projeto que foram utilizados como referência pelo Inep para mudar a forma de se publicar o censo educacional brasileiro.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.gov.br/inep/pt-br/assuntos/noticias/institucional/nota-de-esclarecimento-divulgacao-dos-microdados&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Aqui&lt;/a&gt; está a nota de esclarecimento publicada pelo Inep que justifica o porquê da instituição ter removido todos os censos educacionais brasileiros to site deles que foram publicados antes do projeto PRICE. A nota também comenta sobre a nova forma que a instituição irá publicar os próximos censos.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.gov.br/inep/pt-br/assuntos/noticias/institucional/nota-de-esclarecimento-divulgacao-dos-microdados&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Aqui&lt;/a&gt; está a nota de esclarecimento publicada pelo Inep que justifica o porquê da instituição ter removido todos os censos educacionais brasileiros do site deles que foram publicados antes do projeto PRICE. A nota também comenta sobre a nova forma que a instituição irá publicar os próximos censos.&lt;/p&gt;
 </description>
     </item>
     
