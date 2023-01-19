@@ -4,6 +4,94 @@
   
   
   <url>
+    <loc></loc><lastmod>2023-01-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href=""
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href=""
+    /></url>
+  <url>
+    <loc>https://ramongonze.github.io/publication-type/7/</loc><lastmod>2023-01-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://ramongonze.github.io/pt/publication-type/7/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ramongonze.github.io/publication-type/7/"
+    /></url>
+  <url>
+    <loc>https://ramongonze.github.io/publication/master_thesis/</loc><lastmod>2023-01-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://ramongonze.github.io/pt/publication/master_thesis/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ramongonze.github.io/publication/master_thesis/"
+    /></url>
+  <url>
+    <loc>https://ramongonze.github.io/tag/privacy/</loc><lastmod>2023-01-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://ramongonze.github.io/publication_types/</loc><lastmod>2023-01-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://ramongonze.github.io/pt/publication_types/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ramongonze.github.io/publication_types/"
+    /></url>
+  <url>
+    <loc>https://ramongonze.github.io/publication/</loc><lastmod>2023-01-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://ramongonze.github.io/pt/publication/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ramongonze.github.io/publication/"
+    /></url>
+  <url>
+    <loc>https://ramongonze.github.io/tag/quantitative-information-flow/</loc><lastmod>2023-01-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc></loc><lastmod>2023-01-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href=""
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href=""
+    /></url>
+  <url>
+    <loc>https://ramongonze.github.io/</loc><lastmod>2023-01-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://ramongonze.github.io/pt/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ramongonze.github.io/"
+    /></url>
+  <url>
+    <loc>https://ramongonze.github.io/tag/sampling/</loc><lastmod>2023-01-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://ramongonze.github.io/tag/statistical-disclosure/</loc><lastmod>2023-01-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://ramongonze.github.io/tags/</loc><lastmod>2023-01-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://ramongonze.github.io/pt/tags/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ramongonze.github.io/tags/"
+    /></url>
+  <url>
     <loc>https://ramongonze.github.io/project/</loc><lastmod>2022-07-02T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="pt"
@@ -54,36 +142,6 @@
       href="https://ramongonze.github.io/tag/qif-library/"
     /></url>
   <url>
-    <loc>https://ramongonze.github.io/</loc><lastmod>2022-07-02T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="pt"
-      href="https://ramongonze.github.io/pt/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://ramongonze.github.io/"
-    /></url>
-  <url>
-    <loc>https://ramongonze.github.io/tags/</loc><lastmod>2022-07-02T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="pt"
-      href="https://ramongonze.github.io/pt/tags/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://ramongonze.github.io/tags/"
-    /></url>
-  <url>
-    <loc></loc><lastmod>2022-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="pt"
-      href=""
-    /><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href=""
-    /></url>
-  <url>
     <loc>https://ramongonze.github.io/publication-type/4/</loc><lastmod>2022-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="pt"
@@ -132,26 +190,6 @@
       rel="alternate"
       hreflang="en"
       href=""
-    /></url>
-  <url>
-    <loc>https://ramongonze.github.io/publication_types/</loc><lastmod>2022-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="pt"
-      href="https://ramongonze.github.io/pt/publication_types/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://ramongonze.github.io/publication_types/"
-    /></url>
-  <url>
-    <loc>https://ramongonze.github.io/publication/</loc><lastmod>2022-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="pt"
-      href="https://ramongonze.github.io/pt/publication/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://ramongonze.github.io/publication/"
     /></url>
   <url>
     <loc></loc><lastmod>2022-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
