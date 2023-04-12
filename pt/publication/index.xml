@@ -5,7 +5,7 @@
     <link>https://ramongonze.github.io/pt/publication/</link>
       <atom:link href="https://ramongonze.github.io/pt/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language><lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language><lastBuildDate>Wed, 01 Mar 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ramongonze.github.io/media/icon_hu642a7a9d7f0a9425042fc70c7a02c56e_150229_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
@@ -13,10 +13,10 @@
     </image>
     
     <item>
-      <title>Um modelo de Fluxo de Informação Quantitativo para Ataques de Inferência de Atributo e Utilidade em Divulgação de Dados por Amostragem</title>
-      <link>https://ramongonze.github.io/pt/publication/master_thesis/</link>
-      <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://ramongonze.github.io/pt/publication/master_thesis/</guid>
+      <title>Analyzing the Shuffle Model through the Lens of Quantitative Information Flow</title>
+      <link>https://ramongonze.github.io/pt/publication/qif-shuffle/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://ramongonze.github.io/pt/publication/qif-shuffle/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -36,10 +36,10 @@ Supplementary notes can be added here, including [code, math, and images](https:
     </item>
     
     <item>
-      <title>Analyzing the Shuffle Model through the Lens of Quantitative Information Flow</title>
-      <link>https://ramongonze.github.io/pt/publication/qif-shuffle/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://ramongonze.github.io/pt/publication/qif-shuffle/</guid>
+      <title>Um modelo de Fluxo de Informação Quantitativo para Ataques de Inferência de Atributo e Utilidade em Divulgação de Dados por Amostragem</title>
+      <link>https://ramongonze.github.io/pt/publication/master_thesis/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://ramongonze.github.io/pt/publication/master_thesis/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
