@@ -1,0 +1,32 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+{{ site.description }}
+
+<h2>Publications</h2>
+
+{% assign pubs = site.publications | sort: 'date' | reverse %}
+{% for pub in pubs limit:5 %}
+({{ pub.date | date: "%Y" }}) <a href="{{ pub.url | relative_url }}"><strong>{{ pub.title }}</strong></a><br>
+{{ pub.authors }}<br>
+<em>{{ pub.venue }}</em>
+<br><br>
+{% endfor %}
+
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3> -->
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% include documents-collection.html entries=posts type=entries_layout %}
+</div>
+
+{% include paginator.html %}

@@ -13,20 +13,22 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
-search: true
+title: &name Ramon Gonçalves Gonze
+email: ramongonze@gmail.com
+description: &description | # this means to ignore newlines until "baseurl:"
+  I am a PhD student in computer science in cotutelle between École Polytechnique de Paris (France) and Universidade Federal de Minas Gerais (Brazil) under the supervision of Prof. <a href="https://scholar.google.com/citations?user=OOgAyqgAAAAJ&hl=en" target="_blank">Catuscia Palamidessi</a> and <a href="https://scholar.google.com.br/citations?user=9r8YfCgAAAAJ&hl=en&oi=ao" target="_blank">Mário S. Alvim</a>.
+  <br><br>
+  My reserach interesets include responsible computing, privacy, Quantitative Information Flow (QIF) and information theory.
+  <br><br>
+  More about QIF: <a href="https://topete.science">Topete Research Group</a>.
+github_username: ramongonze
+minimal_mistakes_skin: dark
+search: false
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -57,35 +59,30 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+breadcrumbs: true  # Add the path of pages
+enable_copy_code_button: true # Copy button in code blocks
 
-footer:
+author:
+  name   : *name
+  avatar : "/assets/images/bio-photo.jpg"
+  email: "ramongonze@gmail.com"
+  cv: "assets/files/CV_Ramon.pdf"
+  bio    : "PhD student in computer science"
+  location: Belo Horizonte, Brazil
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/ramongonze"
+    - label: "Google Scholar"
+      icon: "fa-brands fa-google-scholar"
+      url: "https://scholar.google.com/citations?user=OHffUYgAAAAJ&hl=pt-BR&oi=ao"
+    - label: "ORCID"
+      icon: "fa-brands fa-orcid"
+      url: "https://orcid.org/my-orcid?orcid=0009-0003-3247-3064"
+
+atom_feed: # Hide feed icon in the footer
+  hide: true
+# footer:
 
 defaults:
   # _posts
@@ -94,11 +91,8 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      show_date: true
+      date_format: "%Y-%m"
   # _pages
   - scope:
       path: "_pages"
@@ -106,10 +100,23 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+# These settings control the types of collections used by the template
+collections:
+  news:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:title/
+  projects:
+    output: true
+    permalink: /:collection/:path/
+    

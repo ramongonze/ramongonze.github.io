@@ -1,0 +1,19 @@
+---
+layout: posts
+author_profile: false
+---
+
+<strong>Year:</strong> {{ page.date | date: "%Y"}}<br>
+<strong>Authors:</strong> {{ page.authors }}<br>
+<strong>Venue:</strong> {{ page.venue }}<br>
+<strong>DOI:</strong> <a href="https://doi.org/{{ page.doi }}" target="_blank" rel="noopener noreferrer">{{ page.doi }}</a><br><br>
+<strong>Abstract</strong><p style="font-size: 0.9em;">{{ page.abstract }}</p>
+
+{{ content }}
+
+
+<style>
+  strong {
+    color: #00adb5;
+  }
+</style>

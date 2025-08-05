@@ -1,0 +1,12 @@
+---
+layout: publications
+title: "Analyzing the Shuffle Model through the Lens of Quantitative Information Flow"
+date: 2023-03-01
+venue: "36th IEEE Computer Security Foundations Symposium (CSF)"
+authors: "Mireya Jurado, Mário Alvim, Ramon Gonze, Catuscia Palamidessi"
+doi: 10.1109/CSF57540.2023.00033
+abstract: >-
+    Local differential privacy (LDP) is a variant of differential privacy (DP) that avoids the necessity of a trusted central curator, at the expense of a worse trade-off between privacy and utility. The shuffle model has emerged as a way to provide greater anonymity to users by randomly permuting their messages, so that the direct link between users and their reported values is lost to the data collector. By combining an LDP mechanism with a shuffler, privacy can be improved at no cost for the accuracy of operations insensitive to permutations, thereby improving utility in many analytic tasks. However, the privacy implications of shuffling are not always immediately evident, and derivations of privacy bounds are made on a case-by-case basis.
+    In this paper, we analyze the combination of LDP with shuffling in the rigorous framework of quantitative information flow (QIF), and reason about the resulting resilience to inference attacks. QIF naturally captures (combinations of) randomization mechanisms as information-theoretic channels, thus allowing for precise modeling of a variety of inference attacks in a natural way and for measuring the leakage of private information under these attacks. We exploit symmetries of the particular combination of k-RR mechanisms with the shuffle model to achieve closed formulas that express leakage exactly. In particular, we provide formulas that show how shuffling improves protection against leaks in the local model, and study how leakage behaves for various values of the privacy parameter of the LDP mechanism.
+    In contrast to the strong adversary from differential privacy, who knows everyone’s record in a dataset but the target’s, we focus on an uninformed adversary, who does not know the value of any individual in the dataset. This adversary is often more realistic as a consumer of statistical datasets, and indeed we show that in some situations mechanisms that are equivalent w.r.t. the strong adversary can provide different privacy guarantees under the uninformed one. Finally, we also illustrate the application of our model to the typical strong adversary from DP.
+---
