@@ -65,7 +65,7 @@ enable_copy_code_button: true # Copy button in code blocks
 author:
   name   : *name
   avatar : "/assets/images/bio-photo.jpg"
-  email: "ramongonze@gmail.com"
+  email: "(\u03BBx@\u03BBy.\u03BBz) ramongonze gmail com"
   cv: "assets/files/CV_Ramon.pdf"
   bio    : "PhD student in computer science"
   location: Belo Horizonte, Brazil
