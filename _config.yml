@@ -18,7 +18,7 @@ email: ramongonze@gmail.com
 description: &description | # this means to ignore newlines until "baseurl:"
   I am a PhD student in computer science in cotutelle between École Polytechnique de Paris (France) and Universidade Federal de Minas Gerais (Brazil) under the supervision of Prof. <a href="https://scholar.google.com/citations?user=OOgAyqgAAAAJ&hl=en" target="_blank">Catuscia Palamidessi</a> and <a href="https://scholar.google.com.br/citations?user=9r8YfCgAAAAJ&hl=en&oi=ao" target="_blank">Mário S. Alvim</a>.
   <br><br>
-  My reserach interesets include responsible computing, privacy, Quantitative Information Flow (QIF) and information theory.
+  My reserach interesets include responsible computing, privacy, Quantitative Information Flow (QIF), differential privacy and information theory.
   <br><br>
   More about QIF: <a href="https://topete.science">Topete Research Group</a>.
 github_username: ramongonze
@@ -110,6 +110,12 @@ defaults:
   - scope:
       path: ""
       type: publications
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: news
     values:
       layout: single
       author_profile: true

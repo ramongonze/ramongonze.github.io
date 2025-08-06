@@ -2,9 +2,25 @@
 layout: archive
 ---
 
+<style>
+  strong {
+    color: #00adb5;
+  }
+</style>
+
 {{ content }}
 
 {{ site.description }}
+
+<hr>
+<h2>News</h2>
+
+{% assign news = site.news | sort: 'date' | reverse %}
+{% for new in news limit:10 %}
+<strong>[{{ new.date | date: "%d %b %Y" }}]</strong> {{ new.description }}
+<br><br>
+{% endfor %}
+
 
 <hr>
 <h2>Publications</h2>
