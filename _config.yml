@@ -79,6 +79,12 @@ author:
     - label: "ORCID"
       icon: "fa-brands fa-orcid"
       url: "https://orcid.org/my-orcid?orcid=0009-0003-3247-3064"
+    - label: "Linkedin"
+      icon: "fa-brands fa-linkedin"
+      url: "https://www.linkedin.com/in/ramongonze"
+    - label: "Lattes"
+      icon: "ai ai-lattes"   # pick any Font Awesome class you like
+      url: "http://lattes.cnpq.br/4271248191436145"
 
 atom_feed: # Hide feed icon in the footer
   hide: true
