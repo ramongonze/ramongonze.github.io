@@ -6,8 +6,8 @@ permalink: /news/
 
 {% assign news = site.news | sort: 'date' | reverse %}
 {% for new in news %}
-<strong>[{{ new.date | date: "%d %b %Y" }}]</strong> {{ new.description }}
-<br><br>
+  <strong>[{{ new.date | date: "%d %b %Y" }}]</strong> {{ new.description }}
+  <br><br>
 {% endfor %}
 
 <style>
