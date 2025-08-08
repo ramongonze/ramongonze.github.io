@@ -119,6 +119,12 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
 
 # These settings control the types of collections used by the template
 collections:
