@@ -76,7 +76,6 @@ title: "About"
 </style>
 
 <!-- Intro / description -->
-<h2 class="about-title"><span class="accent">About</span></h2>
 <div class="intro-card">
   {{ site.description }}
 </div>
