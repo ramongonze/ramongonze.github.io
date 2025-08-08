@@ -10,9 +10,15 @@ layout: archive
     --card: #2a2a2a;                  /* card bg for dark theme */
     --muted: #b9c0c4;                 /* secondary text */
     --divider: rgba(255,255,255,0.08);
+
+    /* Timeline geometry (keeps line & dot aligned) */
+    --tl-line-x: 14px;  /* distance from timeline's left edge to the vertical line */
+    --tl-gap: 24px;     /* spacing from the vertical line to the card content */
+    --tl-dot: 10px;     /* diameter of the dot */
   }
 
   /* ========= Page framing ========= */
+  .home-title span { color: #ffffff; } /* White for section titles only */
   .home-section + .home-section { margin-top: 2.25rem; }
   .home-title {
     display: flex; align-items: center; gap: .6rem;
@@ -31,25 +37,42 @@ layout: archive
   }
   .intro a { color: var(--link); }
 
-  /* ========= News timeline ========= */
+  /* ========= Timeline (shared by News & Publications) ========= */
   .timeline {
-    position: relative; padding-left: 1.25rem; margin: .6rem 0 0;
+    position: relative;
+    /* left padding = line position + gap to cards */
+    padding-left: calc(var(--tl-line-x) + var(--tl-gap));
+    margin: .6rem 0 0;
   }
   .timeline::before {
-    content: ""; position: absolute; left: .4rem; top: 0; bottom: 0;
+    content: "";
+    position: absolute; top: 0; bottom: 0;
     width: 2px; background: var(--divider);
+    left: var(--tl-line-x);
   }
   .timeline-item {
-    position: relative; padding: .55rem .75rem .55rem 1rem;
+    position: relative;
+    padding: .55rem .75rem .55rem 1rem;
     border-radius: 10px; background: var(--card); margin-bottom: .6rem;
     transition: transform .15s ease, box-shadow .15s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,.18);
   }
   .timeline-item:hover { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(0,0,0,.22); }
+
+  /* Dot centered on the line, regardless of values above */
   .timeline-item::before {
-    content: ""; position: absolute; left: -0.9rem; top: .95rem;
-    width: .55rem; height: .55rem; border-radius: 50%; background: var(--accent);
+    content: "";
+    position: absolute;
+    top: .95rem; /* adjust if you want the dot higher/lower */
+    width: var(--tl-dot); height: var(--tl-dot);
+    border-radius: 50%; background: var(--accent);
     box-shadow: 0 0 0 3px rgba(255,212,71,.18);
+    /* Item's left edge sits at timeline padding-left.
+       The line is `var(--tl-gap)` to the left of that.
+       So to center the dot on the line: -gap - half(dot). */
+    left: calc(-0.95 * var(--tl-gap) - (var(--tl-dot) / 2));
   }
+
   .timeline-date {
     display: inline-block;
     font-weight: 700;
@@ -61,16 +84,11 @@ layout: archive
     margin-right: .5rem;
   }
 
-
-  /* ========= Publications ========= */
-  .pub-list { display: grid; gap: .75rem; margin-top: .6rem; }
-  .pub {
-    background: var(--card); border-radius: 12px; padding: .85rem 1rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,.18);
-  }
+  /* ========= Publications (link styles reused inside timeline) ========= */
   .pub-title a { color: var(--link); text-decoration: none; }
   .pub-title a:hover { text-decoration: underline; }
   .pub-meta { font-size: .92rem; }
+  /* keep year-badge in case you use it elsewhere */
   .year-badge {
     display: inline-block; font-weight: 700; font-size: .85rem;
     padding: .15rem .45rem; border-radius: 999px; background: rgba(255,212,71,.14);
@@ -113,32 +131,31 @@ layout: archive
     {% for item in news limit:10 %}
       <div class="timeline-item">
         <span class="timeline-date">{{ item.date | date: "%d %b %Y" }}</span>
-
         <span>{{ item.description }}</span>
       </div>
     {% endfor %}
   </div>
 </section>
 
-<!-- ========= Publications ========= -->
+<!-- ========= Publications (now a timeline) ========= -->
 <section class="home-section">
   <h2 class="home-title"><span class="accent">Publications</span></h2>
 
-  <div class="pub-list">
+  <div class="timeline">
     {% assign pubs = site.publications | sort: 'date' | reverse %}
     {% for pub in pubs limit:5 %}
-      <article class="pub">
-        <div class="pub-title">
-          <span class="year-badge">{{ pub.date | date: "%Y" }}</span>
+      <div class="timeline-item">
+        <span class="timeline-date">{{ pub.date | date: "%Y" }}</span>
+        <span class="pub-title">
           <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
-        </div>
+        </span>
         {% if pub.authors %}
           <div class="pub-meta muted">{{ pub.authors }}</div>
         {% endif %}
         {% if pub.venue %}
           <div class="pub-meta"><em>{{ pub.venue }}</em></div>
         {% endif %}
-      </article>
+      </div>
     {% endfor %}
   </div>
 </section>
