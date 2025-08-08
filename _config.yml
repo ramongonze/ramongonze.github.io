@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: &name Ramon Gonçalves Gonze
-email: ramongonze@gmail.com
+email: ramon.gonze@inria.fr
 description: &description | # this means to ignore newlines until "baseurl:"
   I am a PhD student in computer science in cotutelle between École Polytechnique de Paris (France) and Universidade Federal de Minas Gerais (Brazil) under the supervision of Prof. <a href="https://scholar.google.com/citations?user=OOgAyqgAAAAJ&hl=en" target="_blank">Catuscia Palamidessi</a> and <a href="https://scholar.google.com.br/citations?user=9r8YfCgAAAAJ&hl=en&oi=ao" target="_blank">Mário S. Alvim</a>.
   <br><br>
@@ -65,7 +65,7 @@ enable_copy_code_button: true # Copy button in code blocks
 author:
   name   : *name
   avatar : "/assets/images/bio-photo.jpg"
-  email: "(\u03BBx@\u03BBy.\u03BBz) ramongonze gmail com"
+  email: "(\u03BBw.\u03BBx@\u03BBy.\u03BBz) ramon gonze inria fr"
   cv: "assets/files/CV_Ramon.pdf"
   bio    : "PhD student in computer science"
   location: Belo Horizonte, Brazil
