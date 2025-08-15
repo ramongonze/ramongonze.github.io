@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: projects
 title: "Privattacks: A Python package for evaluating privacy risks in tabular datasets"
 date: 2025-07-25
 ---

@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: projects
 title: "Qiflib: A Python package for Quantitative Information Flow (QIF)"
 date: 2022-07-01
 ---

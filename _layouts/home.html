@@ -169,7 +169,7 @@ layout: archive
     {% for project in projects limit:5 %}
       <div class="project-card">
         <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-        <div class="project-date">Updated on {{ project.date | date: "%d %b %Y" }}</div>
+        <div class="project-date">Updated on {{ project.date | date: "%b %Y" }}</div>
         {% if project.description %}
           <div class="muted">{{ project.description }}</div>
         {% endif %}

@@ -57,7 +57,7 @@ permalink: /projects/
   {% for project in projects %}
     <div class="project-card">
       <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-      <span class="project-date">Updated on {{ project.date | date: "%d %b %Y" }}</span>
+      <span class="project-date">Updated on {{ project.date | date: "%b %Y" }}</span>
       {% if project.description %}
         <p class="project-description">{{ project.description }}</p>
       {% endif %}
