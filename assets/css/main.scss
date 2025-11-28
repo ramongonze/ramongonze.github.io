@@ -5,5 +5,10 @@ search: false
 
 @charset "utf-8";
 
+// /* Override theme container width BEFORE importing the theme */
+// /* You can use % here */
+// $max-width: 80%;
+
+/* Now pull in the theme */
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

@@ -5,62 +5,68 @@ permalink: /projects/
 ---
 
 <style>
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+  :root {
+    --accent: #ffd447;
+    --muted: #b9c0c4;
+    --link: var(--link-color, #00adb5);
   }
 
-  .project-card {
-    background-color: #2a2a2a; /* lighter than site background for contrast */
-    border-radius: 12px;
-    padding: 1.2rem 1.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  .simple-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
-  .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+  .simple-item {
+    display: flex;
+    gap: 0.6rem;
+    padding: 0.25rem 0;
+    font-size: 0.95rem;
   }
 
-  .project-card h3 {
-    margin-top: 0;
-    margin-bottom: 0.4rem;
+  .simple-date {
+    min-width: 6rem;
+    font-variant-numeric: tabular-nums;
+    font-size: 0.82rem;
+    color: var(--muted);
+    flex-shrink: 0;
+    margin-top: 0.1rem;
   }
 
-  .project-card h3 a {
-    color: var(--link-color, #00adb5);
+  .simple-main {
+    flex: 1;
+  }
+
+  .project-title a {
+    color: var(--link);
     text-decoration: none;
   }
 
-  .project-card h3 a:hover {
+  .project-title a:hover {
     text-decoration: underline;
   }
 
-  .project-date {
-    font-size: 0.85rem;
-    color: #bbbbbb;
-    margin-bottom: 0.6rem;
-    display: block;
-  }
-
-  .project-description {
-    font-size: 0.95rem;
-    color: #e0e0e0;
+  .project-desc {
+    font-size: 0.9rem;
+    color: var(--muted);
   }
 </style>
 
-<div class="project-grid">
+<ul class="simple-list">
   {% assign projects = site.projects | sort: 'date' | reverse %}
   {% for project in projects %}
-    <div class="project-card">
-      <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-      <span class="project-date">Updated on {{ project.date | date: "%b %Y" }}</span>
-      {% if project.description %}
-        <p class="project-description">{{ project.description }}</p>
-      {% endif %}
-    </div>
+    <li class="simple-item">
+      <span class="simple-date">
+        Updated on {{ project.date | date: "%b %Y" }}
+      </span>
+      <div class="simple-main">
+        <div class="project-title">
+          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        </div>
+        {% if project.description %}
+          <div class="project-desc">{{ project.description }}</div>
+        {% endif %}
+      </div>
+    </li>
   {% endfor %}
-</div>
+</ul>

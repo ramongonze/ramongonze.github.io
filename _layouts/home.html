@@ -3,113 +3,104 @@ layout: archive
 ---
 
 <style>
-  /* ========= Accents & tokens ========= */
   :root {
-    --accent: #ffd447;                /* your highlight yellow */
+    --accent: #ffd447;
+    --muted: #b9c0c4;
     --link: var(--link-color, #00adb5);
-    --card: #2a2a2a;                  /* card bg for dark theme */
-    --muted: #b9c0c4;                 /* secondary text */
-    --divider: rgba(255,255,255,0.08);
-
-    /* Timeline geometry (keeps line & dot aligned) */
-    --tl-line-x: 14px;  /* distance from timeline's left edge to the vertical line */
-    --tl-gap: 24px;     /* spacing from the vertical line to the card content */
-    --tl-dot: 10px;     /* diameter of the dot */
   }
 
-  /* ========= Page framing ========= */
-  .home-title span { color: #ffffff; } /* White for section titles only */
-  .home-section + .home-section { margin-top: 2.25rem; }
+  /* ========= Layout & headings ========= */
+  .home-section {
+    margin-bottom: 1.75rem;
+  }
+
   .home-title {
-    display: flex; align-items: center; gap: .6rem;
-    font-size: 1.4rem; margin: 0 0 .75rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.15rem;
+    margin: 0 0 0.5rem 0;
   }
+
+  .home-title span {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
   .home-title::after {
-    content: ""; flex: 1 1 auto; height: 1px; background: var(--divider);
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.12);
   }
+
   .accent { color: var(--accent); }
   .muted { color: var(--muted); }
 
-  /* ========= Intro (description) ========= */
+  /* ========= Intro ========= */
   .intro {
-    padding: 1.1rem 1.2rem; border-radius: 12px; background: var(--card);
-    line-height: 1.65; box-shadow: 0 4px 12px rgba(0,0,0,.18);
-  }
-  .intro a { color: var(--link); }
-
-  /* ========= Timeline (shared by News & Publications) ========= */
-  .timeline {
-    position: relative;
-    /* left padding = line position + gap to cards */
-    padding-left: calc(var(--tl-line-x) + var(--tl-gap));
-    margin: .6rem 0 0;
-  }
-  .timeline::before {
-    content: "";
-    position: absolute; top: 0; bottom: 0;
-    width: 2px; background: var(--divider);
-    left: var(--tl-line-x);
-  }
-  .timeline-item {
-    position: relative;
-    padding: .55rem .75rem .55rem 1rem;
-    border-radius: 10px; background: var(--card); margin-bottom: .6rem;
-    transition: transform .15s ease, box-shadow .15s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,.18);
-  }
-  .timeline-item:hover { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(0,0,0,.22); }
-
-  /* Dot centered on the line, regardless of values above */
-  .timeline-item::before {
-    content: "";
-    position: absolute;
-    top: .95rem; /* adjust if you want the dot higher/lower */
-    width: var(--tl-dot); height: var(--tl-dot);
-    border-radius: 50%; background: var(--accent);
-    box-shadow: 0 0 0 3px rgba(255,212,71,.18);
-    /* Item's left edge sits at timeline padding-left.
-       The line is `var(--tl-gap)` to the left of that.
-       So to center the dot on the line: -gap - half(dot). */
-    left: calc(-0.95 * var(--tl-gap) - (var(--tl-dot) / 2));
+    max-width: 60rem;
+    line-height: 1.7;
+    font-size: 0.98rem;
+    margin-bottom: 0.25rem;
   }
 
-  .timeline-date {
-    display: inline-block;
-    font-weight: 700;
-    font-size: .85rem;
-    padding: .15rem .45rem;
-    border-radius: 999px;
-    background: rgba(255,212,71,.14);
-    color: var(--accent);
-    margin-right: .5rem;
+  .intro a {
+    color: var(--link);
   }
 
-  /* ========= Publications (link styles reused inside timeline) ========= */
-  .pub-title a { color: var(--link); text-decoration: none; }
-  .pub-title a:hover { text-decoration: underline; }
-  .pub-meta { font-size: .92rem; }
-  /* keep year-badge in case you use it elsewhere */
-  .year-badge {
-    display: inline-block; font-weight: 700; font-size: .85rem;
-    padding: .15rem .45rem; border-radius: 999px; background: rgba(255,212,71,.14);
-    color: var(--accent); margin-right: .5rem;
+  /* ========= Simple lists (News, Pubs, Projects) ========= */
+  .simple-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
-  /* ========= Projects ========= */
-  .project-grid {
-    display: grid; gap: 1rem; margin-top: .6rem;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  .simple-item {
+    display: flex;
+    gap: 0.6rem;
+    padding: 0.2rem 0;
+    font-size: 0.95rem;
   }
-  .project-card {
-    background: var(--card); border-radius: 12px; padding: 1rem 1.05rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,.18);
-    transition: transform .15s ease, box-shadow .15s ease;
+
+  .simple-date {
+    min-width: 6.2rem;
+    font-variant-numeric: tabular-nums;
+    font-size: 0.82rem;
+    color: var(--muted);
+    flex-shrink: 0;
+    margin-top: 0.1rem;
   }
-  .project-card:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(0,0,0,.25); }
-  .project-card h3 { margin: 0 0 .35rem 0; font-size: 1.02rem; }
-  .project-card h3 a { color: var(--link); text-decoration: none; }
-  .project-card h3 a:hover { text-decoration: underline; }
-  .project-date { font-size: .85rem; color: var(--muted); }
+
+  .simple-main {
+    flex: 1;
+  }
+
+  /* ========= Links & meta ========= */
+  .item-title a,
+  .project-title a {
+    color: var(--link);
+    text-decoration: none;
+  }
+
+  .item-title a:hover,
+  .project-title a:hover {
+    text-decoration: underline;
+  }
+
+  .item-meta {
+    font-size: 0.86rem;
+    color: var(--muted);
+  }
+
+  .item-meta em {
+    font-style: italic;
+  }
+
+  .project-desc {
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
 </style>
 
 {{ content }}
@@ -126,56 +117,70 @@ layout: archive
 <section class="home-section">
   <h2 class="home-title"><span class="accent">News</span></h2>
 
-  <div class="timeline">
+  <ul class="simple-list">
     {% assign news = site.news | sort: 'date' | reverse %}
     {% for item in news limit:10 %}
-      <div class="timeline-item">
-        <span class="timeline-date">{{ item.date | date: "%d %b %Y" }}</span>
-        <span>{{ item.description }}</span>
-      </div>
+      <li class="simple-item">
+        <span class="simple-date">
+          {{ item.date | date: "%d %b %Y" }}
+        </span>
+        <div class="simple-main">
+          <div>{{ item.description }}</div>
+        </div>
+      </li>
     {% endfor %}
-  </div>
+  </ul>
 </section>
 
-<!-- ========= Publications (now a timeline) ========= -->
+<!-- ========= Publications ========= -->
 <section class="home-section">
   <h2 class="home-title"><span class="accent">Publications</span></h2>
 
-  <div class="timeline">
+  <ul class="simple-list">
     {% assign pubs = site.publications | sort: 'date' | reverse %}
     {% for pub in pubs limit:5 %}
-      <div class="timeline-item">
-        <span class="timeline-date">{{ pub.date | date: "%Y" }}</span>
-        <span class="pub-title">
-          <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
+      <li class="simple-item">
+        <span class="simple-date">
+          {{ pub.date | date: "%Y" }}
         </span>
-        {% if pub.authors %}
-          <div class="pub-meta muted">{{ pub.authors }}</div>
-        {% endif %}
-        {% if pub.venue %}
-          <div class="pub-meta"><em>{{ pub.venue }}</em></div>
-        {% endif %}
-      </div>
+        <div class="simple-main">
+          <div class="item-title">
+            <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
+          </div>
+          {% if pub.authors %}
+            <div class="item-meta">{{ pub.authors }}</div>
+          {% endif %}
+          {% if pub.venue %}
+            <div class="item-meta"><em>{{ pub.venue }}</em></div>
+          {% endif %}
+        </div>
+      </li>
     {% endfor %}
-  </div>
+  </ul>
 </section>
 
 <!-- ========= Projects ========= -->
 <section class="home-section">
   <h2 class="home-title"><span class="accent">Projects</span></h2>
 
-  <div class="project-grid">
+  <ul class="simple-list">
     {% assign projects = site.projects | sort: 'date' | reverse %}
     {% for project in projects limit:5 %}
-      <div class="project-card">
-        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-        <div class="project-date">Updated on {{ project.date | date: "%b %Y" }}</div>
-        {% if project.description %}
-          <div class="muted">{{ project.description }}</div>
-        {% endif %}
-      </div>
+      <li class="simple-item">
+        <span class="simple-date">
+          Updated on {{ project.date | date: "%b %Y" }}
+        </span>
+        <div class="simple-main">
+          <div class="project-title">
+            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+          </div>
+          {% if project.description %}
+            <div class="project-desc">{{ project.description }}</div>
+          {% endif %}
+        </div>
+      </li>
     {% endfor %}
-  </div>
+  </ul>
 </section>
 
 {% comment %}
