@@ -131,7 +131,7 @@ Member of the team that executed the PRICE (Privacidade nos Censos Educacionais)
       <div class="item-meta">
         École Polytechnique, and
         <a href="https://ufmg.br/international-visitors">Universidade Federal de Minas Gerais (UFMG)</a>
-        — Palaiseau, France · Belo Horizonte, Brazil
+        <br>Palaiseau, France · Belo Horizonte, Brazil
       </div>
       <div class="edu-body">
         {{ phd | markdownify }}
@@ -146,7 +146,7 @@ Member of the team that executed the PRICE (Privacidade nos Censos Educacionais)
       <div class="edu-title">MSc in Computer Science</div>
       <div class="item-meta">
         <a href="https://ufmg.br/international-visitors">Universidade Federal de Minas Gerais (UFMG)</a>
-        — Belo Horizonte, Brazil
+        <br> Belo Horizonte, Brazil
       </div>
       <div class="edu-body">
         {{ msc | markdownify }}
@@ -161,7 +161,7 @@ Member of the team that executed the PRICE (Privacidade nos Censos Educacionais)
       <div class="edu-title">B.Sc. in Information Systems</div>
       <div class="item-meta">
         <a href="https://ufmg.br/international-visitors">Universidade Federal de Minas Gerais (UFMG)</a>
-        — Belo Horizonte, Brazil
+        <br> Belo Horizonte, Brazil
       </div>
     </div>
   </li>
@@ -173,7 +173,7 @@ Member of the team that executed the PRICE (Privacidade nos Censos Educacionais)
       <div class="edu-title">Associate's Degree, Information Technology</div>
       <div class="item-meta">
         <a href="http://funecriacho.contagem.mg.gov.br/">Fundação de Ensino de Contagem - FUNEC</a>
-        — Contagem, Brazil
+        <br> Contagem, Brazil
       </div>
     </div>
   </li>

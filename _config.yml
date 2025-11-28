@@ -59,7 +59,6 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-page_width: 80%
 breadcrumbs: true  # Add the path of pages
 enable_copy_code_button: true # Copy button in code blocks
 
